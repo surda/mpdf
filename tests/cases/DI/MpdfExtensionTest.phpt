@@ -6,7 +6,6 @@ use Nette\DI\Container;
 use Surda\Mpdf\MpdfFactory;
 use Tester\Assert;
 use Tester\TestCase;
-use Tests\Surda\Mpdf\ContainerFactory;
 
 require __DIR__ . '/../../bootstrap.php';
 

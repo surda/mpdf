@@ -6,7 +6,11 @@ use Nette\DI\CompilerExtension;
 use Nette\Schema\Expect;
 use Nette\Schema\Schema;
 use Surda\Mpdf\MpdfFactory;
+use stdClass;
 
+/**
+ * @property-read stdClass $config
+ */
 class MpdfExtension extends CompilerExtension
 {
     public function getConfigSchema(): Schema

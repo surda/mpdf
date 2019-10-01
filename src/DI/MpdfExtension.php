@@ -16,7 +16,7 @@ class MpdfExtension extends CompilerExtension
     public function getConfigSchema(): Schema
     {
         $parameters = $this->getContainerBuilder()->parameters;
-        $tempDir = array_key_exists('tempDir', $parameters) ? $parameters['tempDir'] . '/mpdf' : NULL;
+        $tempDir = array_key_exists('tempDir', $parameters) ? $parameters['tempDir'] . '/cache/mpdf' : NULL;
 
         return Expect::structure([
             'mpdf' => Expect::array()->default([
